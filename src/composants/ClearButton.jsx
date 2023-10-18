@@ -1,8 +1,7 @@
-export default function EqualButton({output, setOutput}) {
-    let outputChange=output;
+export default function ClearButton({output, setOutput}) {
 
-    function evalOp(output){
-        setOutput((output) => eval(output));
+    function clearAll(output){
+        setOutput((output) => output=0);
         console.log('test equal '+output);
 
     // const buttonEgal = (
@@ -11,10 +10,10 @@ export default function EqualButton({output, setOutput}) {
     //     </button>
     //  )  
 
-}
+    }
     return (
         <button
-            onClick={() => evalOp(outputChange)}> =
+            onClick={() => clearAll(output)}> Clear
         </button>
     )
   }
