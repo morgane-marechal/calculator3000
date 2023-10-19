@@ -17,28 +17,29 @@ export default function Calculator() {
     const [ output, setOutput] = useState("");localStorage
 
     const DScreen =  (<h1>hello</h1>);
-    function totalOp(output){
-        let total= eval(output);
-        console.log(total);
-    }
+    // function totalOp(output){
+    //     let total= eval(output);
+    //     console.log(total);
+    // }
 
     
     
     return (
-        <div>
+        <div className='calculator'>
             {/* <DScreen /> */}
-            <Title />
-            <h2>{output}</h2>
-            <h1></h1>
-            <BeautifulScreen />
-            <div id="numbers">
+            {/* <Title /> */}
+
+            <BeautifulScreen output={output} setOutput={setOutput}/>
+            <div id="numbersSpace">
                 <NumberButton output={output} setOutput={setOutput}/>
             </div>
 
-            <div id="operators">
+            <div id="operatorsSpace">
                <OperatorButton output={output} setOutput={setOutput}/>
-               <EqualButton output={output} setOutput={setOutput}/>
-               <ClearButton output={output} setOutput={setOutput}/>
+            </div>
+            <div id="equal">
+                <EqualButton output={output} setOutput={setOutput}/>
+                <ClearButton output={output} setOutput={setOutput}/>
             </div>
         </div>
     )

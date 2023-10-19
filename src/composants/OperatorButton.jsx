@@ -17,7 +17,7 @@ export default function OperatorButton({output, setOutput}) {
 
 
     const buttonsOperator = btnOp.map((value)=>(
-        <button
+        <button className="operatorButton"
             onClick={() => addOperator(value)}
             value={value}
             key={value}>

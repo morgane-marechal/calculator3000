@@ -4,12 +4,14 @@ import StateScreen from './StateScreen.jsx'
 import NumberButton from './NumberButton.jsx'
 import OperatorButton from './OperatorButton.jsx'
 
-function BeautifulScreen() {
+function BeautifulScreen({output, setOutput}) {
 
     return (
         <>
-            <ScoreScreen />
-            <StateScreen />
+            {/* <ScoreScreen />
+            <StateScreen /> */}
+            <div id="totalDisplay">{output}</div>
+            <div id="displayCalc"></div>
         </>
     );
   }

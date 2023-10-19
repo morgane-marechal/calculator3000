@@ -16,7 +16,7 @@ export default function NumberButton({output, setOutput}) {
     // }
 
     const buttonsNumber = btnValues.map((value)=>(
-        <button
+        <button className="number"
             onClick={() => addNumber(value)}
             value={value}
             key={value}>

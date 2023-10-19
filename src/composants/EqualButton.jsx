@@ -3,8 +3,9 @@ export default function EqualButton({output, setOutput}) {
 
     function evalOp(output){
         setOutput((output) => eval(output));
-        console.log('test equal '+output);
-
+        console.log(output);
+        let dispCalc=document.getElementById('displayCalc');
+        dispCalc.innerHTML=(output);
     // const buttonEgal = (
     //     <button
     //             onClick={() => evalOp(output)}> Click
@@ -13,8 +14,8 @@ export default function EqualButton({output, setOutput}) {
 
 }
     return (
-        <button
-            onClick={() => evalOp(outputChange)}> =
+        <button id="egal"
+            onClick={() => evalOp(outputChange)}> Equal
         </button>
     )
   }
