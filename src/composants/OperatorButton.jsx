@@ -11,8 +11,7 @@ export default function OperatorButton({output, setOutput}) {
 
     function addOperator(value){
         setOutput((output) => output + value);
-            console.log(output+value);
-        
+            console.log(output+value);     
     }
 
 
