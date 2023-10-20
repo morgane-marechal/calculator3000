@@ -16,18 +16,10 @@ import Title from './Title.jsx';
 export default function Calculator() {
     const [ output, setOutput] = useState("");localStorage
 
-    const DScreen =  (<h1>hello</h1>);
-    // function totalOp(output){
-    //     let total= eval(output);
-    //     console.log(total);
-    // }
 
-    
     
     return (
         <div className='calculator'>
-            {/* <DScreen /> */}
-            {/* <Title /> */}
 
             <BeautifulScreen output={output} setOutput={setOutput}/>
             <div id="numbersSpace">
